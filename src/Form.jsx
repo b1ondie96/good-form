@@ -4,21 +4,21 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import {
   Button,
-  colors,
   FormHelperText,
   InputAdornment,
   Paper,
 } from "@mui/material";
 import Slider from "@mui/material/Slider";
-import { fontSize } from "@mui/system";
+
 import IconButton from "@mui/material/IconButton";
 import CheckIcon from "@mui/icons-material/Check";
 import ClearIcon from "@mui/icons-material/Clear";
 import DoneAllIcon from "@mui/icons-material/DoneAll";
 import { motion } from "framer-motion";
-import { Preview, Translate } from "@mui/icons-material";
+
 
 const Form = () => {
+
   const alphabet = [
     "a",
     "b",
@@ -550,29 +550,7 @@ const Form = () => {
               },
             }}
           />
-          <TextField
-            id="outlined-read-only-input"
-            label="Read Only"
-            defaultValue="Hello World"
-            InputProps={{
-              readOnly: true,
-            }}
-          />
-          <TextField
-            id="outlined-number"
-            label="Number"
-            type="number"
-            InputLabelProps={{
-              shrink: true,
-            }}
-          />
-          <TextField id="outlined-search" label="Search field" type="search" />
-          <TextField
-            id="outlined-helperText"
-            label="Helper text"
-            defaultValue="Default Value"
-            helperText="Some important text"
-          />
+          
           <motion.div animate={{translateX:randomValues.btnTx,translateY:randomValues.btnTy}}>
             <Button variant="contained" onMouseEnter={()=>submit()}>
               Submit
